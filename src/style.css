@@ -1,0 +1,56 @@
+#options-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 200px;
+}
+
+#help-container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media (max-width: 900px) {
+    #options-container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    #help-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #333333;
+    color: white;
+}
+
+textarea {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 14px;
+}
+
+button {
+    border: 3px solid #BBBBBB;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background: #222222;
+    color: white;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+    background: #000000;
+    border-color: #FF8800;
+}
+
+.individual-section {
+    background: #252525;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+}

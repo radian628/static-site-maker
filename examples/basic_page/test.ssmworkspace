@@ -1,0 +1,6 @@
+{
+    "source": "src",
+    "destination": "dst",
+    "description": "### This is a sample workspace for Static Site Maker.\n\nTry opening one of the existing instance pages or making your own! If you want to see your page in a browser, click the 'build' button.",
+	"homepage": "dst/index.html"
+}

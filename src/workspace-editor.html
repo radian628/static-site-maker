@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Workspace Editor | Static Site Maker</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-editor.css">
+</head>
+<body>
+    <h1>Workspace Editor</h1>
+    <div class="individual-section">
+        <p>Editing <span id="editing-file-name" class="directory-label"></span></p>
+        <p>Source Directory (Relative): <span id="source-directory-name" class="directory-label"></span></p>
+        <p>Destination Directory (Relative): <span id="destination-directory-name" class="directory-label"></span></p>
+    </div>
+    <div class="individual-section">
+        <label for="open-button">Open an instance file: <button id="open-button">Open Instance File</button></label>
+        <br>
+        <label for="new-instance">Create a new instance file. You will be asked to choose a template off of which to base your instance: <button id="new-instance">Create New Instance</button></label>
+    </div>
+    <div class="individual-section">
+        <label for="build-button">Compiles the site, updating the destination folder, and then opens the homepage: <button id="build-button">Build</button></label>
+    </div>
+    <div id="workspace-info-container" class="individual-section">
+
+    </div>
+    <script src="workspace-editor.js"></script>
+</body>
+</html>

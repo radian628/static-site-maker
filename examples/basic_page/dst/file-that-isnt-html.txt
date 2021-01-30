@@ -1,0 +1,1 @@
+All files in the source folder are automatically copied to the destination folder. The only difference is that, in the destination folder, .htmlinstance files are compiled down into .html files.
