@@ -1,19 +1,22 @@
 {
-  "name": "src",
+  "name": "static-site-maker",
+  "productName": "Static Site Maker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create static sites from templates.",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": "radian628",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.2.1"
+    "electron": "^11.2.1",
+    "electron-packager": "^15.2.0"
   },
   "dependencies": {
+    "fs-extra": "^9.1.0",
     "marked": "^1.2.8"
   }
 }
