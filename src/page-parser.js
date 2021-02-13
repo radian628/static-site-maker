@@ -37,6 +37,7 @@ exports.insertInput = function (template, content) {
 }
 
 exports.applyInput = function (instance, directory, replacersToUse) {
+    console.log(instance);
     let replacers = instance.match(/\${.{0,}?}/g).map(str => str.slice(1)).map(replacer => JSON.parse(replacer));
     let substrings = instance.split(/\${.{0,}?}/g);
 

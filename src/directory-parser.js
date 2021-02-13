@@ -85,16 +85,17 @@ function parseFileLinks(callback) {
 }
 
 //Behold, the mythical function containing *six* nested callbacks. Why is async so painful?
-exports.parseDirectory = function parseDirectory(src, dst, callback) {
+exports.parseDirectory = function parseDirectory(workspaceLocation, src, dst, callback) {
 
     let prevDirectory = process.cwd();
     console.log(prevDirectory);
+    process.chdir(workspaceLocation);
 
     fs.rmdir(dst, { recursive: true }, () => {
 
         fse.copy(src, dst, {}, () => {
 
-            process.chdir(dst);            
+            process.chdir(path.join(workspaceLocation, dst));            
 
             let instanceFiles = [];
             let filesToDelete = [];

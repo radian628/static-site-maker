@@ -1,12 +1,20 @@
 const packager = require("electron-packager");
+const { fork } = require("child_process");
 
-async function bundleElectronApp(options) {
-    const appPaths = await packager(options);
-    console.log(`Electron app bundles created here:\n${appPaths.join("\n")}`);
+function bundleElectronApp(options) {
+    packager(options).then(appPaths => {
+        appPaths.forEach(appPath => {
+            console.log("Path: " + appPath);
+        })
+    }).catch(err => {
+        console.log(err);
+    }).finally(() => {
+        //fork("./compress-builds.js");
+    });
 }
 
 bundleElectronApp({
-    dir: "./",
+    dir: "../dist",
     all: true,
     out: "../build"
 });

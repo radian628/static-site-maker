@@ -1,0 +1,92 @@
+#options-container {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 200px;
+}
+
+#help-container {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #333333;
+    color: white;
+}
+
+textarea {
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 14px;
+}
+
+button {
+    border: 3px solid #BBBBBB;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background: #222222;
+    color: white;
+    transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+    background: #000000;
+    border-color: #FF8800;
+}
+
+.individual-section {
+    background: #252525;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.property-value {
+    background: #555555;
+    border-radius: 10px;
+    padding: 5px;
+    word-wrap: none;
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+    width: calc(100% - 15px);
+    height: 150px;
+    border: 2px solid #AAAAAA;
+    border-radius: 15px;
+    background: #191919;
+    color: white;
+    white-space: pre-wrap;
+    padding: 5px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #FF8800;
+}
+
+.replacer textarea {
+    margin-top: 10px;
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.sidebar-left {
+    width: calc(25% - 90px);
+    top: 30px;
+    left: 30px;
+    position: fixed;
+}
+
+.sidebar-right {
+    width: calc(25% - 90px);
+    top: 30px;
+    right: 30px;
+    position: fixed;
+}

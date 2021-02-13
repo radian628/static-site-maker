@@ -9,19 +9,6 @@
     margin-right: 25%;
 }
 
-@media (max-width: 900px) {
-    #options-container {
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    
-    #help-container {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
-}
-
 body {
     font-family: Arial, sans-serif;
     background: #333333;
@@ -53,4 +40,53 @@ button:hover {
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 30px;
+}
+
+.property-value {
+    background: #555555;
+    border-radius: 10px;
+    padding: 5px;
+    word-wrap: none;
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+    width: calc(100% - 15px);
+    height: 150px;
+    border: 2px solid #AAAAAA;
+    border-radius: 15px;
+    background: #191919;
+    color: white;
+    white-space: pre-wrap;
+    padding: 5px;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-color: #FF8800;
+}
+
+.replacer textarea {
+    margin-top: 10px;
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.sidebar-left {
+    width: calc(25% - 90px);
+    top: 30px;
+    left: 30px;
+    position: fixed;
+}
+
+.sidebar-right {
+    width: calc(25% - 90px);
+    top: 30px;
+    right: 30px;
+    position: fixed;
 }
